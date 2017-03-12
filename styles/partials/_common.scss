@@ -1,0 +1,85 @@
+body {
+    background: #dedede;
+    color: #000;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem auto;
+    width: 90%;
+}
+
+header {
+    background: #000;
+    display: block;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+h1 {
+    background: url("../images/horns.jpg") no-repeat;
+    background-size: contain;
+    color: #eee;
+    font-size: 2.5rem;
+    padding-left: 4rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    display: block;
+    font-size: 2em;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.loading {
+    animation: spin 1s linear infinite;
+    display: block;
+    height: 50px;
+    margin: 1rem auto;
+    transform-origin: center;
+    width: 50px;
+}
+
+.content-container {
+    width: 45%;
+}
+
+.photo-container {
+    height: 290px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+
+    .origin {
+        background: rgba(0,0,0,.75);
+        bottom: 1rem;
+        color: #fff;
+        padding: 0.5rem;
+        position: absolute;
+        right: 1rem;
+    }
+}
+
+.list-bands li {
+    transition: background 0.5s ease;
+}
+
+.list-bands li:hover {
+    background: #f3f3f3;
+    cursor: pointer;
+}
+
+li {
+    padding: 0.5rem;
+
+    &:nth-child(even) {
+        background: #cdcdcd;
+    }
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

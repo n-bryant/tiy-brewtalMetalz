@@ -1,0 +1,10 @@
+{
+  "fruits": [
+    {
+      "type": "Apple"
+    },
+    {
+      "type": "Pear"
+    }
+  ]
+}
